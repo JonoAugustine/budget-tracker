@@ -1,11 +1,10 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
+  box-sizing: border-box;
 
-*::before, *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
 }
 
 body {
@@ -30,12 +29,12 @@ input {
   border-radius: 6px;
   padding: 0.4em 0.8em;
   background-color: #e2e8f0;
-}
 
-input:focus {
-  background-color: #ffffff;
-  border: 2px solid #cbd5e0;
-  outline: 0;
+  &:focus {
+    background-color: #ffffff;
+    border: 2px solid #cbd5e0;
+    outline: 0;
+  }
 }
 
 button {
@@ -44,22 +43,17 @@ button {
   cursor: pointer;
   color: #ffffff;
   padding: 10px;
-  -webkit-box-shadow: 0 0.3rem 0.4rem #4801a5;
-          box-shadow: 0 0.3rem 0.4rem #4801a5;
-  -webkit-transition: all 0.3s;
+  box-shadow: 0 0.3rem 0.4rem #4801a5;
   transition: all 0.3s;
-}
 
-button:hover {
-  -webkit-transform: translateY(-5%);
-          transform: translateY(-5%);
-}
+  &:hover {
+    transform: translateY(-5%);
+  }
 
-button:active {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  -webkit-transform: translateY(3px);
-          transform: translateY(3px);
+  &:active {
+    box-shadow: none;
+    transform: translateY(3px);
+  }
 }
 
 table {
@@ -95,4 +89,3 @@ form {
 .transaction-buttons {
   margin-top: 25px;
 }
-/*# sourceMappingURL=style.css.map */
